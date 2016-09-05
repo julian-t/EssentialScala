@@ -1,5 +1,5 @@
 class Account(val number: Long, val name: String, val openingBalance: Double=0.0) {
-  var theBalance = openingBalance
+  private var theBalance = openingBalance
 
   def deposit(amount: Double) =
     if (amount > 0.0) {
